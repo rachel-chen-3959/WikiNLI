@@ -1,0 +1,37 @@
+{
+    "id": {
+        "en": {
+            "configuration": "./models/id-en/decoder.yml",
+            "sourcespm": "./models/id-en/source.spm",
+            "targetspm": "./models/id-en/target.spm"
+        }
+    },
+    "ja": {
+        "en": {
+            "configuration": "./models/ja-en/decoder.yml",
+            "sourcespm": "./models/ja-en/source.spm",
+            "targetspm": "./models/ja-en/target.spm"
+        }
+    },
+    "cs": {
+        "en": {
+            "configuration": "./models/cs-en/decoder.yml",
+            "sourcespm": "./models/cs-en/source.spm",
+            "targetspm": "./models/cs-en/target.spm"
+        }
+    },
+    "fr": {
+        "en": {
+            "configuration": "./models/fr-en/decoder.yml",
+            "sourcespm": "./models/fr-en/source.spm",
+            "targetspm": "./models/fr-en/target.spm"
+        }
+    },
+    "de": {
+        "en": {
+            "configuration": "./models/de-en/decoder.yml",
+            "sourcespm": "./models/de-en/source.spm",
+            "targetspm": "./models/de-en/target.spm"
+        }
+    }
+}
