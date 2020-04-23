@@ -18,10 +18,6 @@ chmod +x launch.sbatch.sh
 ./launch.sbatch.sh fr
 ```
 
-
-With the `test` flag, the `train_mnli.py` script will also generate a CSV of predictions for the unlabaled matched and mismatched test-sets.
-
-
 ## References
 
 [1] Holger Schwenk, Vishrav Chaudhary, Shuo Sun, Hongyu Gong and Paco Guzman,
