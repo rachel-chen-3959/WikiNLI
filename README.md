@@ -8,7 +8,18 @@ We choose Indonesian, Czech, French, Japanese, German corpus from the WikiMatrix
 ## Models
 We use the [processor](https://github.com/RachelChen1116/WikiNLI/blob/master/preprocessor.py) in the Opus-MT framework to load the [Public MT-OPUS models](https://github.com/Helsinki-NLP/Opus-MT-train/tree/master/models) (including the [SentencePiece](https://github.com/google/sentencepiece)-based pre-processors and the models). The models translate the sentences on WikiMatrix into English based on the [Marian-NMT](https://marian-nmt.github.io/), where more command-line options can be found to change the setting of translation.
 
-The [post-processor](https://github.com/RachelChen1116/WikiNLI/blob/master/postprocessor.py) resolves the encoding issues in the translation and filters out the sentence pairs that are detected as in other languages.
+The [post-processor](https://github.com/RachelChen1116/WikiNLI/blob/master/postprocessor.py) resolves the encoding issues in the translation and filters out the sentence pairs that are detected as in other languages. The datasets are finally saved as csv files.
+
+## Implementation
+To implement the collection, run the [launch.sbatch.sh](https://github.com/RachelChen1116/WikiNLI/blob/master/launch.sbatch.sh) file with the language code. There are 5 languages that can be chosen from: Indonesian(id), Japanese(ja), French(fr), Czech(cs), German(de). For example:
+
+```
+chmod +x launch.sbatch.sh
+./launch.sbatch.sh fr
+```
+
+
+With the `test` flag, the `train_mnli.py` script will also generate a CSV of predictions for the unlabaled matched and mismatched test-sets.
 
 
 ## References
