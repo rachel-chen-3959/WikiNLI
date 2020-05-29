@@ -18,6 +18,11 @@ chmod +x launch.sbatch.sh
 ./launch.sbatch.sh fr
 ```
 
+## Evaluation
+To get the evaluation of data, configure CoreNLP by following the [instructions](https://stanfordnlp.github.io/stanza/corenlp_client.html#usage) and start the client, then run the [evaluation.py](https://github.com/RachelChen1116/WikiNLI/blob/master/evaluation.py) file with the input as the json data file path to get the results.
+
+
+
 ## References
 
 [1] Holger Schwenk, Vishrav Chaudhary, Shuo Sun, Hongyu Gong and Paco Guzman,
